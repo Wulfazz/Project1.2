@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Jeu de tour par tour</title>
+</head>
+<body>
+    
+    <!-- plateau -->
+    <div class="boardGame">
+
+            <!-- Joueur 1 -->
+            <div class="health nexus1">
+                <p class="player1">INVOCATEUR 1 :</p>
+            </div>
+            <div class="cards deck1">
+                <div class="card fighter1">
+                    <div>
+                        <img class="heads" src="img/fighters/Balmond.png" alt="Balmond">
+                        <div>
+                            <p class="nom">BALMOND</p>
+                            <img class="stats" src="img/coeur.png" alt="vie">
+                            <img class="stats" src="img/epee.png" alt="shield">
+                        </div>
+                    </div>
+                    <div>
+                        <img class="heads" src="img/fighters/Ruby.png" alt="Ruby">
+                        <div>
+                            <p class="nom">RUBY</p>
+                            <img class="stats" src="img/coeur.png" alt="vie">
+                            <img class="stats" src="img/epee.png" alt="shield">
+                        </div>
+                    </div>
+                </div>
+                <div class="card mage1">
+                    <div>
+                        <img class="heads" src="img/Mage/cécilion.jpg" alt="Cécilion">
+                        <div>
+                            <p class="nom">CECILION</p>
+                            <img class="stats" src="img/coeur.png" alt="vie">
+                            <img class="stats" src="img/epee.png" alt="shield">
+                        </div>
+                    </div>
+                    <div>
+                        <img class="heads" src="img/Mage/Eudora.jpg" alt="Eudora">
+                        <div>
+                            <p class="nom">EUDORA</p>
+                            <img class="stats" src="img/coeur.png" alt="vie">
+                            <img class="stats" src="img/epee.png" alt="shield">
+                        </div>
+                    </div>
+                </div>
+                <div class="card marksman1">
+                    <div>
+                        <img class="heads" src="img/Marksman/Nathan.png" alt="Nathan">
+                        <div>
+                            <p class="nom">NATHAN</p>
+                            <img class="stats" src="img/coeur.png" alt="vie">
+                            <img class="stats" src="img/epee.png" alt="shield">
+                        </div>
+                    </div>
+                    <div>
+                        <img class="heads" src="img/Marksman/wanwan.png" alt="Wanwan">
+                        <div>
+                            <p class="nom">WANWAN</p>
+                            <img class="stats" src="img/coeur.png" alt="vie">
+                            <img class="stats" src="img/epee.png" alt="shield">
+                        </div>
+                    </div>
+                </div>
+                <div class="card support1">
+                    <div>
+                        <img class="heads" src="img/Support/Estes.png" alt="Estes">
+                        <div>
+                            <p class="nom">ESTES</p>
+                            <img class="stats" src="img/coeur.png" alt="vie">
+                            <img class="stats" src="img/epee.png" alt="shield">
+                        </div>
+                    </div>
+                    <div>
+                        <img class="heads" src="img/Support/Angela.png" alt="Angela">
+                        <div>
+                            <p class="nom">ANGELA</p>
+                            <img class="stats" src="img/coeur.png" alt="vie">
+                            <img class="stats" src="img/epee.png" alt="shield">
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="bonus"></div> -->
+            </div>
+
+            <!-- Joueur 2 -->
+            <div class="health nexus2">
+                <p class="player2">INVOCATEUR 2 :</p>
+            </div>
+            <div class="cards deck2">
+                <div class="card fighter2">
+                    <div>
+                        <img class="heads" src="img/fighters/Balmond.png" alt="Balmond">
+                        <div>
+                            <p class="nom">BALMOND</p>
+                            <img class="stats" src="img/coeur.png" alt="vie">
+                            <img class="stats" src="img/epee.png" alt="shield">
+                        </div>
+                    </div>
+                    <div>
+                        <img class="heads" src="img/fighters/Ruby.png" alt="Ruby">
+                        <div>
+                            <p class="nom">RUBY</p>
+                            <img class="stats" src="img/coeur.png" alt="vie">
+                            <img class="stats" src="img/epee.png" alt="shield">
+                        </div>
+                    </div>
+                </div>
+                <div class="card mage2">
+                    <div>
+                        <img class="heads" src="img/Mage/cécilion.jpg" alt="Cécilion">
+                        <div>
+                            <p class="nom">CECILION</p>
+                            <img class="stats" src="img/coeur.png" alt="vie">
+                            <img class="stats" src="img/epee.png" alt="shield">
+                        </div>
+                    </div>
+                    <div>
+                        <img class="heads" src="img/Mage/Eudora.jpg" alt="Eudora">
+                        <div>
+                            <p class="nom">EUDORA</p>
+                            <img class="stats" src="img/coeur.png" alt="vie">
+                            <img class="stats" src="img/epee.png" alt="shield">
+                        </div>
+                    </div>
+                </div>
+                <div class="card marksman2">
+                    <div>
+                        <img class="heads" src="img/Marksman/Nathan.png" alt="Nathan">
+                        <div>
+                            <p class="nom">NATHAN</p>
+                            <img class="stats" src="img/coeur.png" alt="vie">
+                            <img class="stats" src="img/epee.png" alt="shield">
+                        </div>
+                    </div>
+                    <div>
+                        <img class="heads" src="img/Marksman/wanwan.png" alt="Wanwan">
+                        <div>
+                            <p class="nom">WANWAN</p>
+                            <img class="stats" src="img/coeur.png" alt="vie">
+                            <img class="stats" src="img/epee.png" alt="shield">
+                        </div>
+                    </div>
+                </div>
+                <div class="card support2">
+                    <div>
+                        <img class="heads" src="img/Support/Estes.png" alt="Estes">
+                        <div>
+                            <p class="nom">ESTES</p>
+                            <img class="stats" src="img/coeur.png" alt="vie">
+                            <img class="stats" src="img/epee.png" alt="shield">
+                        </div>
+                    </div>
+                    <div>
+                        <img class="heads" src="img/Support/Angela.png" alt="Angela">
+                        <div>
+                            <p class="nom">ANGELA</p>
+                            <img class="stats" src="img/coeur.png" alt="vie">
+                            <img class="stats" src="img/epee.png" alt="shield">
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="bonus"></div> -->
+            </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

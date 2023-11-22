@@ -1,0 +1,120 @@
+/* Corps */
+*{
+    margin:0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Pixelify Sans", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+  
+  body{
+    height: 100vh;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+/* Joueur */
+.health{
+    background-color: black;
+    height: 2.2%;
+    width: 25%;
+    margin-top: 1%;
+    margin-left: 3%;
+    margin-bottom: 2%;
+    border-radius: 15px;
+    color: #e3c99a;
+}
+
+p{
+    margin-left: 3%;
+}
+
+/* BG */
+.boardGame{
+    background-image: url(../img/cécilion\ background.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-size:cover;
+    position: fixed;
+}
+
+
+/* Cartes */
+.cards {
+    width: 100vw;
+    height: 43vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 6px;
+    margin-left: 5%;
+    padding: auto;
+    }
+
+.card{
+    background-image: url(../img/dosCartes.png);
+    width: 60%;
+    height: 85%;
+    border-radius: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 3%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.7);
+    position: relative;
+}
+
+
+.deck1 .card, .deck1 .heads{
+    border: 2px red solid;
+}
+
+.deck2 .card, .deck2 .heads{
+    border: 2px blue solid;
+}
+
+.heads{
+    width: 47%;
+    height: 40%;
+    display: inline-block;
+    border-radius: 15px;  
+
+    --s: 120px;   
+    --b: 6px;     
+    --g: 14px;
+
+    aspect-ratio: 1;
+    width: var(--s);
+    outline: calc(var(--s)/2) solid #0009;
+    outline-offset: calc(var(--s)/-2);
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.7);
+  }
+
+  .heads:hover {
+    outline: var(--b) solid var(--c);
+    outline-offset: var(--g);
+    transform: scale(1.5);
+  }
+
+    .stats{
+        height: 50%;
+        width: 50%;
+        margin-left: 20%;
+    }
+
+.nom{
+        background-color: #333;
+        border-radius: 5px;
+        color: #e3c99a;
+        text-align: center;
+        font-weight: bold;
+    }
